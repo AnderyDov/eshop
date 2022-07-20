@@ -1,0 +1,24 @@
+.carts {
+  width: 73%;
+  max-width: 1030px;
+}
+.rowcarts {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 900px) {
+  .rowcarts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carts {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  .carts {
+    width: 100%;
+  }
+}

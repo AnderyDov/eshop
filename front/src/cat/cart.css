@@ -1,0 +1,88 @@
+.cart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 32%;
+  max-width: 350px;
+  max-height: 450px;
+  background: #fffefb;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04),
+    0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  margin: 8px;
+  transition: all 0.5s ease;
+}
+.cart:hover .cart__del {
+  display: block;
+}
+.cart:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 5;
+}
+.cart__wrap {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  max-height: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart__img {
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cart__name {
+  margin: 16px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3f3f3f;
+}
+.cart_descr {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3f3f3f;
+  margin: 16px;
+  margin-top: 0;
+}
+.cart__cost {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 16px;
+  color: #3f3f3f;
+}
+.cart__del {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #ff8484;
+  top: -8px;
+  right: -8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: white;
+  padding: 6px;
+  display: none;
+}
+@media (max-width: 900px) {
+  .cart {
+    width: 80%;
+  }
+}
